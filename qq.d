@@ -1,9 +1,9 @@
 import std.stdio;
+import std.conv;
 
 void main()
 {
     string input;
-    write("Enter a string: ");
     readf("%s", &input);
 
     int a = to!int(input[0..1]);
