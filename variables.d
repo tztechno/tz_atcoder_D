@@ -69,12 +69,11 @@ void main() {
 import std.stdio, std.conv, std.array;
 void main()
 {
-  auto N = readln.split.to!(int[]); // intの配列に変換
-//	write(N);
-	for (int i =0; i<5; ++i)	{
-	  if (N[i] ==0){
-	    write(i+1);
-	  }
+  auto N = readln.split.to!(int[]);
+  for (int i =0; i<5; ++i)	{
+	if (N[i] ==0){
+	  write(i+1);
 	}
-}   
+    }
+}   	
 #####################################
