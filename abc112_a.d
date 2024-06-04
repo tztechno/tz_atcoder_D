@@ -1,10 +1,26 @@
 abc112_a.d
 #######################################
+文字入力
+string input = readln.chomp;
+数字入力
+int a = readln.chomp.to!int;
 #######################################
 #######################################
 #######################################
 #######################################
 #######################################
+import std.stdio, std.string, std.conv;
+
+void main() {
+    string input = readln.chomp;
+    if (input == "1") {
+        writeln("Hello World");
+    } else {
+        int a = readln.chomp.to!int;
+        int b = readln.chomp.to!int;
+        writeln(a + b);
+    }
+}
 #######################################
 [AC confirmed]
 import std.stdio, std.string, std.range, std.conv, std.array, std.algorithm, std.math, std.typecons;
