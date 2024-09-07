@@ -6,6 +6,23 @@ abc122_a.d
 ##########################################
 ##########################################
 ##########################################
+import std.stdio;
+void main()
+{
+    char[char] complementMap = [
+        'A': 'T',
+        'T': 'A',
+        'C': 'G',
+        'G': 'C'
+    ];
+    char b;
+    readf(" %c", &b);
+    if (b in complementMap) {
+        writeln(complementMap[b]);
+    } else {
+        writeln("Invalid input. Please enter A, T, C, or G.");
+    }
+}
 ##########################################
 import std;
 
